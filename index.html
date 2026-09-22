@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Explore beautiful destinations, travel experiences and inspiring places."
+    >
+
+    <title>Explore - Bootstrap UI</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-compass"></i>
+                Explore
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav ms-auto me-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Destinations</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#packages">Packages</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+                <!-- Search Bar -->
+                <form class="d-flex search-form" role="search">
+                    <input
+                        class="form-control me-2"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                    >
+
+                    <button
+                        class="btn btn-light"
+                        type="submit"
+                        aria-label="Search"
+                    >
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- =========================
+         HERO / CAROUSEL
+    ========================== -->
+    <section id="home">
+
+        <div
+            id="heroCarousel"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+        >
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+
+                <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                ></button>
+
+                <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                ></button>
+
+                <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                ></button>
+
+            </div>
+
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80"
+                        class="d-block w-100 carousel-image"
+                        alt="Beautiful tropical beach"
+                    >
+
+                    <div class="carousel-caption">
+
+                        <span class="hero-tag">
+                            DISCOVER
+                        </span>
+
+                        <h1>Discover Beautiful Places</h1>
+
+                        <p>
+                            Explore breathtaking destinations and create
+                            unforgettable memories.
+                        </p>
+
+                        <a href="#destinations" class="btn btn-primary">
+                            Explore Now
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80"
+                        class="d-block w-100 carousel-image"
+                        alt="Mountain landscape"
+                    >
+
+                    <div class="carousel-caption">
+
+                        <span class="hero-tag">
+                            ADVENTURE
+                        </span>
+
+                        <h1>Find Your Next Adventure</h1>
+
+                        <p>
+                            From majestic mountains to peaceful valleys,
+                            adventure is waiting.
+                        </p>
+
+                        <a href="#packages" class="btn btn-primary">
+                            View Packages
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1600&q=80"
+                        class="d-block w-100 carousel-image"
+                        alt="Beautiful European city"
+                    >
+
+                    <div class="carousel-caption">
+
+                        <span class="hero-tag">
+                            EXPERIENCE
+                        </span>
+
+                        <h1>Experience Something New</h1>
+
+                        <p>
+                            Discover cultures, cities and experiences
+                            around the world.
+                        </p>
+
+                        <a href="#gallery" class="btn btn-primary">
+                            View Gallery
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Previous Button -->
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#heroCarousel"
+                data-bs-slide="prev"
+                aria-label="Previous slide"
+            >
+                <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                ></span>
+            </button>
+
+
+            <!-- Next Button -->
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#heroCarousel"
+                data-bs-slide="next"
+                aria-label="Next slide"
+            >
+                <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                ></span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         INTRODUCTION
+    ========================== -->
+    <section class="intro-section">
+
+        <div class="container text-center">
+
+            <span class="section-tag">
+                EXPLORE THE WORLD
+            </span>
+
+            <h2 class="section-title">
+                Travel. Discover. Experience.
+            </h2>
+
+            <p class="section-description">
+                Discover amazing destinations, experience different
+                cultures and make memories that last a lifetime.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FLEX SECTION
+    ========================== -->
+    <section id="destinations" class="features-section">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <span class="section-tag">
+                    WHY TRAVEL WITH US
+                </span>
+
+                <h2 class="section-title">
+                    Make Every Journey Special
+                </h2>
+
+            </div>
+
+
+            <div class="feature-flex">
+
+                <!-- Feature 1 -->
+                <div class="feature-box">
+
+                    <div class="feature-image-wrapper">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+                            alt="Person exploring nature"
+                        >
+
+                    </div>
+
+                    <div class="feature-content">
+
+                        <div class="feature-icon">
+                            <i class="bi bi-globe-americas"></i>
+                        </div>
+
+                        <h3>Explore</h3>
+
+                        <p>
+                            Discover beautiful destinations and
+                            hidden places around the world.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Feature 2 -->
+                <div class="feature-box">
+
+                    <div class="feature-image-wrapper">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80"
+                            alt="Mountain valley"
+                        >
+
+                    </div>
+
+                    <div class="feature-content">
+
+                        <div class="feature-icon">
+                            <i class="bi bi-signpost-split"></i>
+                        </div>
+
+                        <h3>Adventure</h3>
+
+                        <p>
+                            Step outside your comfort zone and
+                            experience exciting adventures.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Feature 3 -->
+                <div class="feature-box">
+
+                    <div class="feature-image-wrapper">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=800&q=80"
+                            alt="Friends travelling together"
+                        >
+
+                    </div>
+
+                    <div class="feature-content">
+
+                        <div class="feature-icon">
+                            <i class="bi bi-heart"></i>
+                        </div>
+
+                        <h3>Memories</h3>
+
+                        <p>
+                            Create unforgettable memories with
+                            friends and loved ones.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PHOTO GALLERY - CSS GRID
+    ========================== -->
+    <section id="gallery" class="gallery-section">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <span class="section-tag">
+                    PHOTO GALLERY
+                </span>
+
+                <h2 class="section-title">
+                    Places Worth Exploring
+                </h2>
+
+                <p class="section-description">
+                    A glimpse of beautiful places waiting to be explored.
+                </p>
+
+            </div>
+
+
+            <!-- 3 x 3 CSS Grid -->
+            <div class="photo-grid">
+
+                <!-- Image 1 -->
+                <div class="gallery-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80"
+                        alt="Ocean and mountains"
+                    >
+
+                    <div class="gallery-overlay">
+                        <span>Nature</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Image 2 -->
+                <div class="gallery-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+                        alt="Mountain lake"
+                    >
+
+                    <div class="gallery-overlay">
+                        <span>Mountains</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Image 3 -->
+                <div class="gallery-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80"
+                        alt="Green mountain landscape"
+                    >
+
+                    <div class="gallery-overlay">
+                        <span>Landscape</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Image 4 -->
+                <div class="gallery-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80"
+                        alt="Snow covered mountains"
+                    >
+
+                    <div class="gallery-overlay">
+                        <span>Snow</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Image 5 -->
+                <div class="gallery-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80"
+                        alt="Forest landscape"
+                    >
+
+                    <div class="gallery-overlay">
+                        <span>Forest</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Image 6 -->
+                <div class="gallery-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80"
+                        alt="Desert road"
+                    >
+
+                    <div class="gallery-overlay">
+                        <span>Road Trip</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Image 7 -->
+                <div class="gallery-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80"
+                        alt="Forest trees"
+                    >
+
+                    <div class="gallery-overlay">
+                        <span>Adventure</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Image 8 -->
+                <div class="gallery-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80"
+                        alt="Coastal landscape"
+                    >
+
+                    <div class="gallery-overlay">
+                        <span>Coast</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Image 9 -->
+                <div class="gallery-item">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80"
+                        alt="Mountain valley"
+                    >
+
+                    <div class="gallery-overlay">
+                        <span>Valley</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         BOOTSTRAP CARDS
+    ========================== -->
+    <section id="packages" class="packages-section">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <span class="section-tag">
+                    TRAVEL PACKAGES
+                </span>
+
+                <h2 class="section-title">
+                    Choose Your Experience
+                </h2>
+
+                <p class="section-description">
+                    Find a travel experience that matches your style.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card travel-card h-100">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="Tropical beach vacation"
+                        >
+
+                        <div class="card-body d-flex flex-column">
+
+                            <span class="card-category">
+                                RELAXATION
+                            </span>
+
+                            <h3 class="card-title">
+                                Tropical Escape
+                            </h3>
+
+                            <p class="card-text">
+                                Relax on beautiful beaches and enjoy
+                                peaceful surroundings away from the city.
+                            </p>
+
+                            <a
+                                href="#contact"
+                                class="btn btn-primary mt-auto card-button"
+                            >
+                                Explore Package
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="card travel-card h-100">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="Mountain adventure"
+                        >
+
+                        <div class="card-body d-flex flex-column">
+
+                            <span class="card-category">
+                                ADVENTURE
+                            </span>
+
+                            <h3 class="card-title">
+                                Mountain Adventure
+                            </h3>
+
+                            <p class="card-text">
+                                Explore scenic mountains, hiking trails
+                                and unforgettable natural landscapes.
+                            </p>
+
+                            <a
+                                href="#contact"
+                                class="btn btn-primary mt-auto card-button"
+                            >
+                                Explore Package
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6 mx-md-auto">
+
+                    <div class="card travel-card h-100">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="European city architecture"
+                        >
+
+                        <div class="card-body d-flex flex-column">
+
+                            <span class="card-category">
+                                CULTURE
+                            </span>
+
+                            <h3 class="card-title">
+                                City Explorer
+                            </h3>
+
+                            <p class="card-text">
+                                Discover historic cities, local culture,
+                                architecture and amazing food.
+                            </p>
+
+                            <a
+                                href="#contact"
+                                class="btn btn-primary mt-auto card-button"
+                            >
+                                Explore Package
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CALL TO ACTION
+    ========================== -->
+    <section id="contact" class="cta-section">
+
+        <div class="container text-center">
+
+            <span class="section-tag cta-tag">
+                START YOUR JOURNEY
+            </span>
+
+            <h2>
+                Your Next Adventure Is Waiting
+            </h2>
+
+            <p>
+                Pack your bags, choose your destination and
+                start exploring the world.
+            </p>
+
+            <a href="#home" class="btn btn-light btn-lg">
+                Get Started
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <!-- Brand -->
+                <div class="col-lg-4 col-md-6">
+
+                    <a href="#" class="footer-brand">
+                        <i class="bi bi-compass"></i>
+                        Explore
+                    </a>
+
+                    <p class="footer-text">
+                        Discover new destinations, experience
+                        unforgettable adventures and create memories
+                        that last forever.
+                    </p>
+
+                    <!-- Social Icons -->
+                    <div class="social-links">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Twitter">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+
+                    <h5>Quick Links</h5>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#destinations">Destinations</a>
+                        </li>
+
+                        <li>
+                            <a href="#gallery">Gallery</a>
+                        </li>
+
+                        <li>
+                            <a href="#packages">Packages</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Services -->
+                <div class="col-lg-3 col-md-6">
+
+                    <h5>Services</h5>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="#">Travel Planning</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Tour Packages</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Adventure Trips</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Travel Support</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="col-lg-3 col-md-6">
+
+                    <h5>Contact</h5>
+
+                    <ul class="contact-list">
+
+                        <li>
+                            <i class="bi bi-geo-alt"></i>
+                            <span>India</span>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-envelope"></i>
+                            <span>hello@example.com</span>
+                        </li>
+
+                        <li>
+                            <i class="bi bi-telephone"></i>
+                            <span>+91 98765 43210</span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <hr class="footer-line">
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Explore. All Rights Reserved.
+                </p>
+
+                <!-- Back to Top -->
+                <a
+                    href="#home"
+                    class="back-to-top"
+                    aria-label="Back to top"
+                >
+                    <i class="bi bi-arrow-up"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+
+    <!-- Search Functionality -->
+    <script>
+
+        const searchForm = document.querySelector(".search-form");
+
+        searchForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const searchInput = searchForm.querySelector("input");
+
+            const searchValue = searchInput.value.trim();
+
+            if (searchValue !== "") {
+
+                alert("Searching for: " + searchValue);
+
+            } else {
+
+                alert("Please enter something to search.");
+
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
